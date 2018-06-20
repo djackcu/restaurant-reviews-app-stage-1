@@ -229,7 +229,7 @@ var DBHelper = function () {
      * Change this to restaurants.json file location on your server.
      */
     get: function get() {
-      var port = 3000; // Change this to your server port
+      var port = 8000; // Change this to your server port
       return 'http://localhost:' + port + '/data/restaurants.json';
     }
   }]);

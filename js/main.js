@@ -191,3 +191,11 @@ var addMarkersToMap = function addMarkersToMap() {
     self.markers.push(marker);
   });
 };
+
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/js/sw.js').then(function (reg) {
+    console.log('Service worker registered');
+  }).catch(function (err) {
+    console.log('Service Worker fail', err);
+  });
+}
