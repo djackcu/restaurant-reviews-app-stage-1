@@ -4,7 +4,7 @@ var cacheName = 'restaurant_cache';
 var version = 6;
 var currentCache;
 //
-var cacheFiles = ['./', 'index.html', 'restaurant.html', 'css/styles.css', 'js/dbhelper.js', 'js/main.js', 'js/restaurant_info.js', 'data/restaurants.json'];
+var cacheFiles = ['./', 'index.html', 'restaurant.html', 'css/styles.css', 'js/dbhelper.js', 'js/main.js', 'js/restaurant_info.js', 'data/restaurants.json', 'img/1.jpj', 'img/2.jpj', 'img/3.jpj', 'img/4.jpj', 'img/5.jpj', 'img/6.jpj', 'img/7.jpj', 'img/8.jpj', 'img/9.jpj', 'img/10.jpj'];
 
 self.addEventListener('install', function (event) {
     currentCache = cacheName + version;

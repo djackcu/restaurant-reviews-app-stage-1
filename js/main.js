@@ -193,7 +193,7 @@ var addMarkersToMap = function addMarkersToMap() {
 };
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/js/sw.js').then(function (reg) {
+  navigator.serviceWorker.register('./sw.js', { scope: './' }).then(function (reg) {
     console.log('Service worker registered');
   }).catch(function (err) {
     console.log('Service Worker fail', err);
