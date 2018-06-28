@@ -202,7 +202,7 @@ var DBHelper = function () {
   }, {
     key: 'imageUrlForRestaurant',
     value: function imageUrlForRestaurant(restaurant) {
-      return '/img/' + restaurant.photograph;
+      return window.location.href + ('/img/' + restaurant.photograph);
     }
 
     /**
