@@ -229,6 +229,7 @@ var DBHelper = function () {
      * Change this to restaurants.json file location on your server.
      */
     get: function get() {
+      console.log(window.location);
       return window.location.href + 'data/restaurants.json';
     }
   }]);
