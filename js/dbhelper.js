@@ -229,8 +229,9 @@ var DBHelper = function () {
      * Change this to restaurants.json file location on your server.
      */
     get: function get() {
-      console.log(window.location);
-      return window.location.href + 'data/restaurants.json';
+      var newUrl = window.location.href.replace(/\/restaurant.html\?id=\d+/gm, '/');
+      console.log(newUrl, 'ok');
+      return newUrl + 'data/restaurants.json';
     }
   }]);
 
