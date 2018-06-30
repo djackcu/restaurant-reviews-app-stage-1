@@ -202,7 +202,7 @@ var DBHelper = function () {
   }, {
     key: 'imageUrlForRestaurant',
     value: function imageUrlForRestaurant(restaurant) {
-      return window.location.href + ('/img/' + restaurant.photograph);
+      return '/img/' + restaurant.photograph;
     }
 
     /**
@@ -229,9 +229,7 @@ var DBHelper = function () {
      * Change this to restaurants.json file location on your server.
      */
     get: function get() {
-      var newUrl = window.location.href.replace(/\/restaurant.html\?id=\d+/gm, '/');
-      console.log(newUrl, 'ok');
-      return newUrl + 'data/restaurants.json';
+      return 'data/restaurants.json';
     }
   }]);
 
