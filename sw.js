@@ -1,7 +1,7 @@
 'use strict';
 
 var cacheName = 'restaurant_cache ';
-var version = 9;
+var version = 1;
 var currentCache = cacheName + version;
 var serviceLog = '[Service Worker ' + currentCache + ']';
 //
